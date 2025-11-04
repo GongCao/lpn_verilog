@@ -1,0 +1,60 @@
+# Configuration for Verilog latency minimization (GCD accelerator)
+max_iterations: 12
+checkpoint_interval: 4
+
+llm:
+  # You can use any OpenAI-compatible endpoint; here is an example (replace as needed):
+  # api_base: "https://api.openai.com/v1"
+  # primary_model: "gpt-4o-mini"
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  primary_model: "gemini-2.5-flash"
+  primary_model_weight: 1.0
+  temperature: 0.4
+  max_tokens: 16000
+  timeout: 120
+
+prompt:
+  system_message: |
+    You are an expert hardware designer. Your job is to REDUCE CYCLE LATENCY
+    between a one-cycle `start` pulse and the `done` pulse in a GCD accelerator,
+    while keeping behavior identical.
+
+    File to edit is Verilog (`initial_module.v`). ONLY modify the code between:
+      "// EVOLVE-BLOCK-START" and "// EVOLVE-BLOCK-END".
+    Do NOT change the module name, parameters, ports, handshake, or reset semantics.
+
+    Interface (fixed):
+      module gcd_accel #(parameter WIDTH=16)(
+        input  clk, rst, start,
+        input  [WIDTH-1:0] a, b,
+        output done,
+        output [WIDTH-1:0] result);
+
+    Contract:
+      - On rising edge after `start=1`, the module begins computing gcd(a,b).
+      - `done` must pulse high for exactly 1 cycle when `result` is valid.
+      - Synchronous, active-high reset.
+      - No latches, no x-propagation; use posedge clocked regs.
+      - Must behave for a,b in [0, 2^WIDTH-1].
+      - Keep the design synthesizable (no delays or $display in EVOLVE block).
+
+    Optimization hints you MAY use:
+      - Replace subtraction loop with Euclidean algorithm using remainder.
+      - Do more work per cycle (e.g., conditional multi-step, modulo).
+      - Early exits for edge cases (a==0 || b==0).
+      - Keep it simple and fast—avoid unbounded loops in always blocks.
+
+database:
+  population_size: 36
+  archive_size: 18
+  num_islands: 3
+  elite_selection_ratio: 0.25
+  exploitation_ratio: 0.7
+
+evaluator:
+  timeout: 60
+  cascade_thresholds: [0.05]   # if stage1 score >= 0.6, run stage2
+  parallel_evaluations: 2
+
+diff_based_evolution: true
+max_code_length: 20000
