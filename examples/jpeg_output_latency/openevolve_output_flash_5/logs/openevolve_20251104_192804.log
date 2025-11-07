@@ -1,0 +1,58 @@
+2025-11-04 19:28:04,780 - openevolve.controller - INFO - Logging to examples/jpeg_output_latency/openevolve_output/logs/openevolve_20251104_192804.log
+2025-11-04 19:28:04,809 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-11-04 19:28:04,857 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: gemini-2.5-flash
+2025-11-04 19:28:04,858 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: gemini-2.5-flash (weight: 1.00)
+2025-11-04 19:28:04,867 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-11-04 19:28:04,869 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-04 19:28:04,869 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-11-04 19:28:04,877 - openevolve.evaluator - INFO - Successfully loaded evaluation function from examples/jpeg_output_latency/evaluator.py
+2025-11-04 19:28:04,877 - openevolve.evaluator - INFO - Initialized evaluator with examples/jpeg_output_latency/evaluator.py
+2025-11-04 19:28:04,877 - openevolve.controller - INFO - Initialized OpenEvolve with examples/jpeg_output_latency/initial_module.v
+2025-11-04 19:28:04,877 - openevolve.controller - INFO - Adding initial program to database
+2025-11-04 19:29:43,358 - openevolve.evaluator - INFO - Evaluated program e7ae1ae3-e6c9-47a8-b20f-73e46f3fcab3 in 98.48s: combined_score=0.0000, avg_latency=2039424.9020, median_latency=1439264.0000, best_latency=90252.0000, worst_latency=9382581.0000, latency_count=51.0000, reliability_score=1.0000
+2025-11-04 19:29:43,358 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2025-11-04 19:29:43,361 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2025-11-04 19:29:43,361 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2025-11-04 19:29:43,362 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2025-11-04 19:29:43,362 - openevolve.database - INFO - Island Status:
+2025-11-04 19:29:43,362 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: e7ae1ae3-e6c9-47a8-b20f-73e46f3fcab3)
+2025-11-04 19:29:43,362 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-04 19:29:43,362 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-04 19:29:43,362 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 5 iterations (total: 6)
+2025-11-04 19:29:43,369 - openevolve.process_parallel - INFO - Early stopping disabled
+2025-11-04 19:29:43,387 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-04 19:29:43,388 - openevolve.evaluator - INFO - Successfully loaded evaluation function from examples/jpeg_output_latency/evaluator.py
+2025-11-04 19:29:43,389 - openevolve.evaluator - INFO - Initialized evaluator with examples/jpeg_output_latency/evaluator.py
+2025-11-04 19:29:43,390 - openevolve.llm.ensemble - INFO - Sampled model: gemini-2.5-flash
+2025-11-04 19:29:43,391 - openevolve.llm.openai - WARNING - Skipping seed parameter as Google AI Studio endpoint doesn't support it. Reproducibility may be limited.
+2025-11-04 19:30:41,800 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-11-04 19:30:41,837 - openevolve.llm.ensemble - INFO - Sampled model: gemini-2.5-flash
+2025-11-04 19:30:41,838 - openevolve.llm.openai - WARNING - Skipping seed parameter as Google AI Studio endpoint doesn't support it. Reproducibility may be limited.
+2025-11-04 19:30:41,849 - openevolve.process_parallel - WARNING - Iteration 1 error: LLM returned None response
+2025-11-04 19:31:33,516 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-11-04 19:31:33,535 - openevolve.process_parallel - WARNING - Iteration 2 error: No valid diffs found in response
+2025-11-04 19:31:33,536 - openevolve.llm.ensemble - INFO - Sampled model: gemini-2.5-flash
+2025-11-04 19:31:33,538 - openevolve.llm.openai - WARNING - Skipping seed parameter as Google AI Studio endpoint doesn't support it. Reproducibility may be limited.
+2025-11-04 19:32:18,661 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-11-04 19:32:18,681 - openevolve.llm.ensemble - INFO - Sampled model: gemini-2.5-flash
+2025-11-04 19:32:18,681 - openevolve.llm.openai - WARNING - Skipping seed parameter as Google AI Studio endpoint doesn't support it. Reproducibility may be limited.
+2025-11-04 19:32:18,682 - openevolve.process_parallel - WARNING - Iteration 3 error: No valid diffs found in response
+2025-11-04 19:32:58,601 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-11-04 19:34:31,958 - openevolve.evaluator - INFO - Evaluated program c47a19a6-daf5-48f3-9747-9f5196abd051 in 93.33s: combined_score=0.0000, avg_latency=1542047.9608, median_latency=1081230.0000, best_latency=72497.0000, worst_latency=7530742.0000, latency_count=51.0000, reliability_score=1.0000
+2025-11-04 19:34:31,969 - openevolve.llm.ensemble - INFO - Sampled model: gemini-2.5-flash
+2025-11-04 19:34:31,970 - openevolve.llm.openai - WARNING - Skipping seed parameter as Google AI Studio endpoint doesn't support it. Reproducibility may be limited.
+2025-11-04 19:34:31,974 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 5}
+2025-11-04 19:34:31,975 - openevolve.database - INFO - New best program c47a19a6-daf5-48f3-9747-9f5196abd051 replaces e7ae1ae3-e6c9-47a8-b20f-73e46f3fcab3 (combined_score: 0.0000 → 0.0000, +0.0000)
+2025-11-04 19:34:31,977 - openevolve.process_parallel - INFO - Iteration 4: Program c47a19a6-daf5-48f3-9747-9f5196abd051 (parent: e7ae1ae3-e6c9-47a8-b20f-73e46f3fcab3) completed in 133.28s
+2025-11-04 19:34:31,977 - openevolve.process_parallel - INFO - Metrics: combined_score=0.0000, avg_latency=1542047.9608, median_latency=1081230.0000, best_latency=72497.0000, worst_latency=7530742.0000, latency_count=51.0000, reliability_score=1.0000
+2025-11-04 19:34:31,978 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 4: c47a19a6-daf5-48f3-9747-9f5196abd051
+2025-11-04 19:35:15,714 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-11-04 19:35:15,738 - openevolve.process_parallel - WARNING - Iteration 5 error: LLM returned None response
+2025-11-04 19:35:15,738 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2025-11-04 19:35:15,754 - openevolve.database - INFO - Saved database with 2 programs to examples/jpeg_output_latency/openevolve_output/checkpoints/checkpoint_5
+2025-11-04 19:35:15,756 - openevolve.controller - INFO - Saved best program at checkpoint 5 with metrics: combined_score=0.0000, avg_latency=1542047.9608, median_latency=1081230.0000, best_latency=72497.0000, worst_latency=7530742.0000, latency_count=51.0000, reliability_score=1.0000
+2025-11-04 19:35:15,756 - openevolve.controller - INFO - Saved checkpoint at iteration 5 to examples/jpeg_output_latency/openevolve_output/checkpoints/checkpoint_5
+2025-11-04 19:35:15,768 - openevolve.process_parallel - INFO - Stopped process pool
+2025-11-04 19:35:15,769 - openevolve.controller - INFO - Using tracked best program: c47a19a6-daf5-48f3-9747-9f5196abd051
+2025-11-04 19:35:15,770 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=0.0000, avg_latency=1542047.9608, median_latency=1081230.0000, best_latency=72497.0000, worst_latency=7530742.0000, latency_count=51.0000, reliability_score=1.0000
+2025-11-04 19:35:15,773 - openevolve.controller - INFO - Saved best program to examples/jpeg_output_latency/openevolve_output/best/best_program.v with program info to examples/jpeg_output_latency/openevolve_output/best/best_program_info.json

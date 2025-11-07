@@ -1,0 +1,18 @@
+{
+  "id": "c47a19a6-daf5-48f3-9747-9f5196abd051",
+  "generation": 1,
+  "iteration": 4,
+  "timestamp": 1762284871.9618647,
+  "parent_id": "e7ae1ae3-e6c9-47a8-b20f-73e46f3fcab3",
+  "metrics": {
+    "combined_score": 6.484878401600051e-07,
+    "avg_latency": 1542047.9607843137,
+    "median_latency": 1081230.0,
+    "best_latency": 72497.0,
+    "worst_latency": 7530742.0,
+    "latency_count": 51,
+    "reliability_score": 1.0
+  },
+  "language": "javascript",
+  "saved_at": 1762284915.7732794
+}
