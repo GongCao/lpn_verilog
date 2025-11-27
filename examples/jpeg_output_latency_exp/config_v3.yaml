@@ -1,0 +1,83 @@
+# Configuration for JPEG decoder latency minimization
+max_iterations: 50
+checkpoint_interval: 1
+
+# LLM (Gemini via OpenAI-compatible endpoint)
+llm:
+  primary_model: "gemini-2.5-flash"
+  primary_model_weight: 1.0
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  temperature: 0.6
+  max_tokens: 1000000
+  timeout: 900
+
+# Prompt configuration
+prompt:
+  system_message: |
+    You are an expert digital design and Verilog engineer. Your task is to optimize the latency of a JPEG decoder written in Verilog.
+
+    Constraints:
+    - Only modify code INSIDE the EVOLVE block markers.
+    - Keep the top-level module name(s), ports, and public interfaces identical so that the Verilator build and test scripts still work.
+    - The output must maintain functional correctness and be bit-exact with respect to the original implementation for all valid inputs.
+    - Keep comments concise and explain any added parameters in-line.
+
+    IMPORTANT IMPLEMENTATION RULES:
+    - The design must remain fully synthesizable:
+      - Do NOT add `#` delays, `initial` blocks (except ROM init if already present), `$display`, `$finish`, DPI, or other non-synthesizable or simulator-only constructs.
+      - Do NOT rely on uninitialized registers or X/Z values.
+    - Keep global structure and connectivity:
+      - Do NOT rename modules, ports, parameters, or top-level signals.
+      - Do NOT change array dimensions or table sizes used for Huffman or DQT tables.
+      - Do NOT change the contents of fixed Huffman or quantization lookup tables; they must stay identical so decoding remains compliant with the JPEG bitstream.
+    - Maintain reset, flush, and image-boundary behavior:
+      - Reset logic and `img_start_i`/`img_end_i` handling must remain correct so images still start and end cleanly.
+      - Any FIFOs or pipelines must still fully drain and reinitialize correctly across images.
+
+    ALLOWED OPTIMIZATIONS (WHAT YOU SHOULD TRY):
+    - Micro-architectural / pipeline improvements that reduce average cycles per decoded image **without** changing externally visible behavior:
+      - Rebalance combinational logic into multiple pipeline stages while keeping the same sequence of outputs per clock cycle once the pipeline is filled.
+      - Precompute and share common subexpressions inside always blocks (especially large `case` or `if/else` trees) to shorten critical paths.
+      - Reduce redundant registers or logic where two signals are always equal or trivially related.
+    - Local cleanups inside a module:
+      - Replace long priority `if/else` chains with `case` statements when they are mutually exclusive.
+      - Factor repeated pieces of logic into local wires or functions, as long as they remain synthesizable and are defined inside the same EVOLVE block.
+      - Simplify arithmetic expressions where algebraically safe (e.g., factor shared multipliers or shifts).
+    - It is OK to add internal parameters, regs, and wires:
+      - Declare them near the top of the module.
+      - Provide safe default values for any new parameters.
+      - Briefly document any new parameter with a short end-of-line comment.
+
+    THINGS YOU MUST NOT DO:
+    - Do NOT change:
+      - Blocking vs non-blocking assignment style in sequential logic in a way that alters behavior.
+      - The order of operations in state machines, counters, or pointer updates in ways that affect the cycle-by-cycle protocol.
+      - The numeric scaling, shift amounts, or constants in the IDCT and DQT datapath (this will break pixel values).
+    - Do NOT introduce:
+      - New modules or files, `include` statements, or dependencies outside this EVOLVE block.
+      - Deep or data-dependent `for` loops that might infer very large hardware or change timing drastically.
+
+    GOAL:
+    - Prefer **small, safe, incremental** changes that are very likely to compile and pass the verification tests.
+    - Make optimizations that reduce the effective latency (cycles) for decoding the full set of test images, while keeping the decoded pixels and control behavior exactly the same as the original design.
+
+# Database / population
+database:
+  population_size: 100
+  archive_size: 20
+  num_islands: 1
+  elite_selection_ratio: 0.1
+  exploitation_ratio: 0.5
+  # If you later want novelty search, uncomment and switch to a Gemini embedding model:
+  # embedding_model: "gemini-embedding-001"
+  # similarity_threshold: 0.995
+
+# Evaluator configuration (two-stage allowed; stage1==stage2 here to respect your pipeline)
+evaluator:
+  timeout: 900          # seconds for full run (build + 50 images)
+  cascade_thresholds: [1.0]  # pass-through gate
+  parallel_evaluations: 1    # Verilator builds are not trivially parallel here
+
+# Evolution settings
+diff_based_evolution: true
+max_code_length: 1000000     # allow large HDL

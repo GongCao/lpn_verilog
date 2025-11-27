@@ -1,0 +1,48 @@
+# Configuration for JPEG decoder latency minimization
+max_iterations: 10
+checkpoint_interval: 1
+
+# LLM (Gemini via OpenAI-compatible endpoint)
+llm:
+  primary_model: "gemini-2.5-flash"
+  primary_model_weight: 1.0
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  temperature: 0.6
+  max_tokens: 1000000
+  timeout: 900
+
+# Prompt configuration
+prompt:
+  system_message: |
+    You are an expert digital design and Verilog engineer. Your task is to optimize the latency of a JPEG decoder written in Verilog.
+    Constraints:
+    - Only modify code INSIDE the EVOLVE block markers.
+    - Keep the top-level module name(s), ports, and public interfaces identical so that the Verilator build and test scripts still work.
+    - The output must maintain functional identical/correction throughout all optimizations.
+    - Keep comments concise and explain any added parameters in-line.
+    
+#- The design must remain synthesizable; do not use #delays or non-synthesizable constructs.
+#- Prioritize architectural and micro-architectural optimizations that reduce cycles to decode each image (e.g., pipeline balancing, improved FSM scheduling, reduced stalls, better buffering/handshakes).
+#- Do not remove required reset behavior or break functional correctness—the evaluator will reject if build/test fails.
+#- Avoid introducing vendor-specific primitives.
+
+# Database / population
+database:
+  population_size: 40
+  archive_size: 20
+  num_islands: 1
+  elite_selection_ratio: 0.2
+  exploitation_ratio: 0.7
+  # If you later want novelty search, uncomment and switch to a Gemini embedding model:
+  # embedding_model: "gemini-embedding-001"
+  # similarity_threshold: 0.995
+
+# Evaluator configuration (two-stage allowed; stage1==stage2 here to respect your pipeline)
+evaluator:
+  timeout: 900          # seconds for full run (build + 50 images)
+  cascade_thresholds: [1.0]  # pass-through gate
+  parallel_evaluations: 1    # Verilator builds are not trivially parallel here
+
+# Evolution settings
+diff_based_evolution: true
+max_code_length: 500000     # allow large HDL

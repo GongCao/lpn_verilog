@@ -1,0 +1,1228 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.10.14-linuxkit - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/3.29.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/3.29.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8467f/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL'
+        /usr/bin/make  -f CMakeFiles/cmTC_8467f.dir/build.make CMakeFiles/cmTC_8467f.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL'
+        Building C object CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cczdkNan.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o /tmp/cczdkNan.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_8467f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8467f.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -o cmTC_8467f
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8467f' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckeOF9N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8467f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckeOF9N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8467f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8467f' '-mtune=generic' '-march=x86-64'
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8467f/fast]
+        ignore line: [make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_8467f.dir/build.make CMakeFiles/cmTC_8467f.dir/build]
+        ignore line: [make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-812ImL']
+        ignore line: [Building C object CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cczdkNan.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o /tmp/cczdkNan.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_8467f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8467f.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -o cmTC_8467f]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8467f' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckeOF9N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8467f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckeOF9N.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8467f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckeOF9N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8467f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_8467f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_abef6/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_abef6.dir/build.make CMakeFiles/cmTC_abef6.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ'
+        Building CXX object CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEoGYUA.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEoGYUA.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_abef6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abef6.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_abef6
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFohtd5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abef6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFohtd5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abef6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_abef6/fast]
+        ignore line: [make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_abef6.dir/build.make CMakeFiles/cmTC_abef6.dir/build]
+        ignore line: [make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9vlGVJ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEoGYUA.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEoGYUA.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_abef6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abef6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_abef6]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFohtd5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abef6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccFohtd5.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_abef6] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFohtd5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_abef6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_abef6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _faligned_new"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_faligned_new"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_04eb8/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH'
+        /usr/bin/make  -f CMakeFiles/cmTC_04eb8.dir/build.make CMakeFiles/cmTC_04eb8.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH'
+        Building CXX object CMakeFiles/cmTC_04eb8.dir/src.cxx.o
+        /usr/bin/c++ -D_faligned_new  -O3    -faligned-new -o CMakeFiles/cmTC_04eb8.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH/src.cxx
+        Linking CXX executable cmTC_04eb8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04eb8.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_04eb8.dir/src.cxx.o -o cmTC_04eb8
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7MnTSH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _fbracket_depth_4096"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_fbracket_depth_4096"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_672e1/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K'
+        /usr/bin/make  -f CMakeFiles/cmTC_672e1.dir/build.make CMakeFiles/cmTC_672e1.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K'
+        Building CXX object CMakeFiles/cmTC_672e1.dir/src.cxx.o
+        /usr/bin/c++ -D_fbracket_depth_4096  -O3    -fbracket-depth=4096 -o CMakeFiles/cmTC_672e1.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K/src.cxx
+        c++: error: unrecognized command line option '-fbracket-depth=4096'
+        make[2]: *** [CMakeFiles/cmTC_672e1.dir/build.make:78: CMakeFiles/cmTC_672e1.dir/src.cxx.o] Error 1
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K'
+        make[1]: *** [Makefile:127: cmTC_672e1/fast] Error 2
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-OSsj3K'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _fcf_protection_none"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_fcf_protection_none"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7157d/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH'
+        /usr/bin/make  -f CMakeFiles/cmTC_7157d.dir/build.make CMakeFiles/cmTC_7157d.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH'
+        Building CXX object CMakeFiles/cmTC_7157d.dir/src.cxx.o
+        /usr/bin/c++ -D_fcf_protection_none  -O3    -fcf-protection=none -o CMakeFiles/cmTC_7157d.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH/src.cxx
+        Linking CXX executable cmTC_7157d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7157d.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_7157d.dir/src.cxx.o -o cmTC_7157d
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-nNouwH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _mno_cet"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_mno_cet"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6bd0/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_b6bd0.dir/build.make CMakeFiles/cmTC_b6bd0.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ'
+        Building CXX object CMakeFiles/cmTC_b6bd0.dir/src.cxx.o
+        /usr/bin/c++ -D_mno_cet  -O3    -mno-cet -o CMakeFiles/cmTC_b6bd0.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ/src.cxx
+        c++: error: unrecognized command line option '-mno-cet'; did you mean '-mno-aes'?
+        make[2]: *** [CMakeFiles/cmTC_b6bd0.dir/build.make:78: CMakeFiles/cmTC_b6bd0.dir/src.cxx.o] Error 1
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ'
+        make[1]: *** [Makefile:127: cmTC_b6bd0/fast] Error 2
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-9MpJGJ'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Qunused_arguments"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Qunused_arguments"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6179d/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_6179d.dir/build.make CMakeFiles/cmTC_6179d.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ'
+        Building CXX object CMakeFiles/cmTC_6179d.dir/src.cxx.o
+        /usr/bin/c++ -D_Qunused_arguments  -O3    -Qunused-arguments -o CMakeFiles/cmTC_6179d.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ/src.cxx
+        c++: error: unrecognized command line option '-Qunused-arguments'
+        make[2]: *** [CMakeFiles/cmTC_6179d.dir/build.make:78: CMakeFiles/cmTC_6179d.dir/src.cxx.o] Error 1
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ'
+        make[1]: *** [Makefile:127: cmTC_6179d/fast] Error 2
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-LF9jMJ'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_bool_operation"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_bool_operation"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dccc4/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK'
+        /usr/bin/make  -f CMakeFiles/cmTC_dccc4.dir/build.make CMakeFiles/cmTC_dccc4.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK'
+        Building CXX object CMakeFiles/cmTC_dccc4.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_bool_operation  -O3    -Wno-bool-operation -o CMakeFiles/cmTC_dccc4.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK/src.cxx
+        Linking CXX executable cmTC_dccc4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dccc4.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_dccc4.dir/src.cxx.o -o cmTC_dccc4
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-wOLTpK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_tautological_bitwise_compare"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_tautological_bitwise_compare"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_31ba6/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K'
+        /usr/bin/make  -f CMakeFiles/cmTC_31ba6.dir/build.make CMakeFiles/cmTC_31ba6.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K'
+        Building CXX object CMakeFiles/cmTC_31ba6.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_tautological_bitwise_compare  -O3    -Wno-tautological-bitwise-compare -o CMakeFiles/cmTC_31ba6.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K/src.cxx
+        Linking CXX executable cmTC_31ba6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31ba6.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_31ba6.dir/src.cxx.o -o cmTC_31ba6
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-ppLc6K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_parentheses_equality"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_parentheses_equality"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_597e4/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_597e4.dir/build.make CMakeFiles/cmTC_597e4.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ'
+        Building CXX object CMakeFiles/cmTC_597e4.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_parentheses_equality  -O3    -Wno-parentheses-equality -o CMakeFiles/cmTC_597e4.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ/src.cxx
+        Linking CXX executable cmTC_597e4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_597e4.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_597e4.dir/src.cxx.o -o cmTC_597e4
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-jcp3RJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_sign_compare"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_sign_compare"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6123/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH'
+        /usr/bin/make  -f CMakeFiles/cmTC_c6123.dir/build.make CMakeFiles/cmTC_c6123.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH'
+        Building CXX object CMakeFiles/cmTC_c6123.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_sign_compare  -O3    -Wno-sign-compare -o CMakeFiles/cmTC_c6123.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH/src.cxx
+        Linking CXX executable cmTC_c6123
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6123.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_c6123.dir/src.cxx.o -o cmTC_c6123
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-dUOheH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_uninitialized"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_uninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c7013/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI'
+        /usr/bin/make  -f CMakeFiles/cmTC_c7013.dir/build.make CMakeFiles/cmTC_c7013.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI'
+        Building CXX object CMakeFiles/cmTC_c7013.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_uninitialized  -O3    -Wno-uninitialized -o CMakeFiles/cmTC_c7013.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI/src.cxx
+        Linking CXX executable cmTC_c7013
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7013.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_c7013.dir/src.cxx.o -o cmTC_c7013
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-EVYIFI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_but_set_variable"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_but_set_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_51f54/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_51f54.dir/build.make CMakeFiles/cmTC_51f54.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ'
+        Building CXX object CMakeFiles/cmTC_51f54.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_but_set_variable  -O3    -Wno-unused-but-set-variable -o CMakeFiles/cmTC_51f54.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ/src.cxx
+        Linking CXX executable cmTC_51f54
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51f54.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_51f54.dir/src.cxx.o -o cmTC_51f54
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-tX3asJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_parameter"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_65cca/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K'
+        /usr/bin/make  -f CMakeFiles/cmTC_65cca.dir/build.make CMakeFiles/cmTC_65cca.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K'
+        Building CXX object CMakeFiles/cmTC_65cca.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_parameter  -O3    -Wno-unused-parameter -o CMakeFiles/cmTC_65cca.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K/src.cxx
+        Linking CXX executable cmTC_65cca
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65cca.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_65cca.dir/src.cxx.o -o cmTC_65cca
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-7AeD1K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_variable"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83dc8/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_83dc8.dir/build.make CMakeFiles/cmTC_83dc8.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ'
+        Building CXX object CMakeFiles/cmTC_83dc8.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_variable  -O3    -Wno-unused-variable -o CMakeFiles/cmTC_83dc8.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ/src.cxx
+        Linking CXX executable cmTC_83dc8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83dc8.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_83dc8.dir/src.cxx.o -o cmTC_83dc8
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-pAlBeJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/verilator/verilator-config.cmake:66 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _Wno_shadow"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_shadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea23a/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ'
+        /usr/bin/make  -f CMakeFiles/cmTC_ea23a.dir/build.make CMakeFiles/cmTC_ea23a.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ'
+        Building CXX object CMakeFiles/cmTC_ea23a.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_shadow  -O3    -Wno-shadow -o CMakeFiles/cmTC_ea23a.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ/src.cxx
+        Linking CXX executable cmTC_ea23a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea23a.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_ea23a.dir/src.cxx.o -o cmTC_ea23a
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-4cvzlJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:56 (check_cxx_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:73 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _mt"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_mt"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52b70/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI'
+        /usr/bin/make  -f CMakeFiles/cmTC_52b70.dir/build.make CMakeFiles/cmTC_52b70.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI'
+        Building CXX object CMakeFiles/cmTC_52b70.dir/src.cxx.o
+        /usr/bin/c++ -D_mt  -O3  -o CMakeFiles/cmTC_52b70.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI/src.cxx
+        Linking CXX executable cmTC_52b70
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52b70.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_52b70.dir/src.cxx.o -o cmTC_52b70  -mt
+        c++: error: unrecognized command line option '-mt'; did you mean '-t'?
+        make[2]: *** [CMakeFiles/cmTC_52b70.dir/build.make:99: cmTC_52b70] Error 1
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI'
+        make[1]: *** [Makefile:127: cmTC_52b70/fast] Error 2
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-67qFcI'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:56 (check_cxx_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:73 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _pthread"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_pthread"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a4921/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK'
+        /usr/bin/make  -f CMakeFiles/cmTC_a4921.dir/build.make CMakeFiles/cmTC_a4921.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK'
+        Building CXX object CMakeFiles/cmTC_a4921.dir/src.cxx.o
+        /usr/bin/c++ -D_pthread  -O3  -o CMakeFiles/cmTC_a4921.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK/src.cxx
+        Linking CXX executable cmTC_a4921
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4921.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_a4921.dir/src.cxx.o -o cmTC_a4921  -pthread
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-lCx9QK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:56 (check_cxx_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:73 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _lpthread"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_lpthread"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3817c/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH'
+        /usr/bin/make  -f CMakeFiles/cmTC_3817c.dir/build.make CMakeFiles/cmTC_3817c.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH'
+        Building CXX object CMakeFiles/cmTC_3817c.dir/src.cxx.o
+        /usr/bin/c++ -D_lpthread  -O3  -o CMakeFiles/cmTC_3817c.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH/src.cxx
+        Linking CXX executable cmTC_3817c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3817c.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_3817c.dir/src.cxx.o -o cmTC_3817c  -lpthread
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-3AHvwH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:56 (check_cxx_source_compiles)"
+      - "/usr/local/share/verilator/verilator-config.cmake:73 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:6 (find_package)"
+    checks:
+      - "Performing Test _latomic"
+    directories:
+      source: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K"
+      binary: "/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_latomic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_517d0/fast
+        make[1]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K'
+        /usr/bin/make  -f CMakeFiles/cmTC_517d0.dir/build.make CMakeFiles/cmTC_517d0.dir/build
+        make[2]: Entering directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K'
+        Building CXX object CMakeFiles/cmTC_517d0.dir/src.cxx.o
+        /usr/bin/c++ -D_latomic  -O3  -o CMakeFiles/cmTC_517d0.dir/src.cxx.o -c /home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K/src.cxx
+        Linking CXX executable cmTC_517d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_517d0.dir/link.txt --verbose=1
+        /usr/bin/c++  -O3  CMakeFiles/cmTC_517d0.dir/src.cxx.o -o cmTC_517d0  -latomic
+        make[2]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K'
+        make[1]: Leaving directory '/home/openevolve/examples/jpeg_output_latency_exp/jpeg_exp/jpeg_decoder/sim/CMakeFiles/CMakeScratch/TryCompile-x4NQ0K'
+        
+      exitCode: 0
+...
